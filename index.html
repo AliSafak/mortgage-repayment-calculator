@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="assets/js/index.js" defer></script>
+    <title>Mortgage Repayment Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="hero">
+            <div>
+                <h2>Mortgage Calculator</h2>
+                <p class="clearBtn"><a href="/">Clear All</a></p>
+            </div>
+
+            <div class="herofirstinput">
+                <h3>Mortgage Amount</h3>
+                <input class="valueinput" type="number" placeholder="">
+                <h5 class="warning-value-input">This field is required</h5>
+            </div>
+
+            <div class="inputSidetoSide">
+                <div>
+                    <h3>Mortgage Term</h3>
+                    <input class="years" type="number" placeholder="">
+                    <h5 class="warning-years">This field is required</h5>
+                </div>
+                <div>
+                    <h3>Interest Rate</h3>
+                    <input class="percent" type="number" placeholder="">
+                    <h5 class="warning-percent">This field is required</h5>
+                </div>
+            </div>
+
+            
+            <h3>Mortgage</h3>
+            <div class="mortgagechoices">
+                <label class="mortgagechoice">
+                    <input class="mortChoices" name="dene" type="radio">
+                    Repayment
+                </label>
+                <label class="mortgagechoice">
+                    <input class="mortChoices" name="dene" type="radio">
+                    Interest Only
+                </label>
+            </div>
+
+            <button class="calculateBtn">
+                Calculate Repayments
+            </button>
+        </div>
+
+        <div class="footerfirst">
+            <img src="assets/img/mortgage-img.svg" alt="">
+            <h3>Results shown here</h3>
+            <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+        </div>
+
+        <div class="footer">
+            <h2>Your results</h2>
+            <p>Your results are shown below based on the information you provided. To adjust the results, edit the form
+                and click “calculate repayments” again.</p>
+
+            <div class="totalPayment">
+                <h3>Your monthly repayments</h3>
+                <h1 class="monthpayment">£1,797.74</h1>
+
+                <h4>Total you'll repay over the term</h4>
+                <p class="totalpayment">£539,322.94</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
